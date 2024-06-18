@@ -370,7 +370,7 @@ p.tag {
 }
 
 .photo {
-	height: 400px;
+	height: 500px;
 	width: auto;
 	border-radius: 20px;
 	transition: all .3s ease-out;
@@ -665,6 +665,11 @@ p.tag {
 	.name .typing{
 		margin: 0;
 		padding-left:10px;
+	}
+
+	.photo{
+		height: 400px;
+		width: auto;
 	}
 
 	.social{
