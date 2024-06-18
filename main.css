@@ -9,10 +9,6 @@
 	outline: none;
 }
 
-body {
-	background-color: #0c0532;
-}
-
 ::-webkit-scrollbar {
 	width: 0px;
 }
@@ -45,10 +41,6 @@ body {
 	z-index: 1;
 }
 
-main {
-	padding: 1.5em 0;
-}
-
 .pl,
 .pl__worm {
 	animation-duration: 3s;
@@ -70,18 +62,6 @@ main {
 .pl__worm {
 	animation-name: worm;
 	animation-timing-function: cubic-bezier(0.42, 0.17, 0.75, 0.83);
-}
-
-/* Dark theme */
-@media (prefers-color-scheme: light) {
-	:root {
-		--bg: hsl(var(--hue), 10%, 10%);
-		--fg: hsl(var(--hue), 10%, 90%);
-	}
-
-	.pl__ring {
-		stroke: hsla(var(--hue), 10%, 90%, 0.1);
-	}
 }
 
 /* Animations */
@@ -171,7 +151,7 @@ header {
 	bottom: 0;
 	left: 0;
 	padding: 15px;
-	overflow-y: auto;
+	/* overflow-y: auto; */
 	transition: all 0.5s;
 	z-index: 100;
 }
@@ -225,12 +205,6 @@ header {
 
 .resume a:hover {
 	color: #f25f4c;
-}
-
-.nav-link {
-	text-decoration: none;
-	margin: 0;
-
 }
 
 .hide-link {
@@ -300,25 +274,6 @@ header {
 	transform: translate(-50%, -50%);
 }
 
-/* .section-1{ */
-/* padding: 0px 220px; */
-/* height: 100vh;
-	width: 100%; */
-/* background-color: #cccccc; */
-/* display: flex;
-	flex-direction: column;
-	justify-content: center; */
-/* } */
-
-/* .section-1 p{
-	font-size: 20px;
-}
-
-.section-1 h1{
-	font-weight: bold;
-	color: #555555;
-} */
-
 .backgroundAnimation {
 	min-height: 100vh;
 	width: 100%;
@@ -336,9 +291,7 @@ header {
 	font-weight: lighter;
 }
 
-.name h1{
-	padding-left: 20px;
-}
+
 
 .name>.typing {
 	font-weight: bold;
@@ -350,23 +303,35 @@ header {
 	color: #f25f4c;
 }
 
-.name .social {
-	padding-left: 20px;
+.social{
 	display: flex;
-	justify-content: flex-start;
+	flex-direction: column;
+	align-items: center;
 	gap: 10px;
 }
 
-ul.social {
-	padding: 0;
-	margin: 0;
-	width: fit-content;
+.social i{
+	font-size: 35px;
 }
 
-.social li {
-	list-style-type: none;
-
+.social a{
+	color: #fff;
+	text-decoration: none;
+	display: flex;
+	align-items: center;
+	gap: 10px;
 }
+
+.social a:hover{
+	color: #f25f4c;
+}
+
+
+/* .name .social {
+	padding-left: 20px;
+	gap: 10px;
+}
+
 
 .social a {
 	font-size: 40px;
@@ -376,9 +341,9 @@ ul.social {
 
 .social a:hover {
 	color: #a7a9be;
-}
+} */
 
-
+.section-1,
 .section-2,
 .section-3,
 .section-4,
@@ -702,8 +667,17 @@ p.tag {
 		padding-left:10px;
 	}
 
-	.name .social{
+	.social{
 
+		gap: 5px;
+	}
+	
+	.social i{
+		font-size: 25px;
+	}
+	
+	.social a{
+		gap: 5px;
 	}
 
 	.skill-icons {
