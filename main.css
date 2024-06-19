@@ -187,6 +187,7 @@ header {
 	padding: 5px 0px;
 	transition: all .4s;
 	z-index: 100;
+	border:2px #fff solid;
 	border-top-left-radius: 20px;
 	border-bottom-left-radius: 20px;
 }
@@ -296,6 +297,7 @@ header {
 .name>.typing {
 	font-weight: bold;
 	padding-left: 20px;
+	padding-bottom: 5px;
 
 }
 
@@ -306,8 +308,8 @@ header {
 .social{
 	display: flex;
 	flex-direction: column;
-	align-items: center;
-	gap: 10px;
+	padding-left: 20px;
+	gap: 5px;
 }
 
 .social i{
@@ -315,7 +317,7 @@ header {
 }
 
 .social a{
-	color: #fff;
+	color: #eebbc3;
 	text-decoration: none;
 	display: flex;
 	align-items: center;
@@ -323,7 +325,7 @@ header {
 }
 
 .social a:hover{
-	color: #f25f4c;
+	color: #f2f3f5;
 }
 
 
@@ -430,9 +432,14 @@ p.tag {
 .timeline>.card {
 	z-index: 1;
 	margin: 40px;
+	box-shadow: 10px 10px #f25f4c;
 	padding: 10px 20px;
 	max-width: 800px;
 
+}
+
+.timeline > .card:hover{
+	
 }
 
 .card-title {
@@ -657,6 +664,10 @@ p.tag {
 
 @media only screen and (max-width: 1100px) {
 	
+	.resume {
+		font-size: 20px;
+	}
+
 	.name h1{
 		font-size: 40px;
 		padding-left: 10px;
