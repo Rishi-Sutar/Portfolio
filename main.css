@@ -236,6 +236,7 @@ header {
 	width: fit-content;
 	overflow: hidden;
 	gap: 10px;
+	border: 2px solid #f25f4c;
 }
 
 .nav-menu a:hover,
@@ -244,6 +245,7 @@ header {
 .nav-link li:hover>a {
 	color: #fff;
 	background: #f25f4c;
+	border:2px solid white;
 }
 
 
