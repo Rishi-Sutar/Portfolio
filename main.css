@@ -187,7 +187,6 @@ header {
 	padding: 5px 0px;
 	transition: all .4s;
 	z-index: 100;
-	border:2px #fff solid;
 	border-top-left-radius: 20px;
 	border-bottom-left-radius: 20px;
 }
@@ -236,7 +235,6 @@ header {
 	width: fit-content;
 	overflow: hidden;
 	gap: 10px;
-	border: 2px solid #f25f4c;
 }
 
 .nav-menu a:hover,
@@ -245,7 +243,6 @@ header {
 .nav-link li:hover>a {
 	color: #fff;
 	background: #f25f4c;
-	border:2px solid white;
 }
 
 
@@ -376,14 +373,14 @@ p.tag {
 .photo {
 	height: 500px;
 	width: auto;
-	border-radius: 20px;
+	border-bottom-left-radius: 80px 80px;
+	border-bottom-right-radius: 80px 80px;
+	border-top-right-radius: 80px 80px;
+	box-shadow: 10px 10px #f25f4c;
 	transition: all .3s ease-out;
+	background-color: #eebbc3;
 }
 
-.photo:hover {
-	filter: grayscale(0.5);
-	transform: scale(1.2);
-}
 
 .info h1 {
 	font-size: 40px;
@@ -428,7 +425,6 @@ p.tag {
 	top: 0;
 	bottom: 0;
 	left: 50%;
-	margin-left: -3px;
 }
 
 .timeline>.card {
