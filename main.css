@@ -200,11 +200,11 @@ header {
 }
 
 .resume:hover {
-	background-color: #f2f3f5;
+	padding-right:20px;
 }
 
-.resume a:hover {
-	color: #f25f4c;
+.resume a:hover{
+	color: #f2f3f5;
 }
 
 .hide-link {
@@ -306,13 +306,19 @@ header {
 
 .social{
 	display: flex;
-	flex-direction: column;
-	padding-left: 20px;
-	gap: 5px;
+	gap: 20px;
+	padding:0px 0px 20px 20px;
 }
 
-.social i{
-	font-size: 35px;
+.social img{
+	height: 50px;
+	width: auto;
+	border-radius: 10px;
+	border: 4px solid white;
+}
+
+.social img:hover{
+    border: 4px solid #f25f4c;
 }
 
 .social a{
@@ -371,14 +377,14 @@ p.tag {
 }
 
 .photo {
-	height: 500px;
+	height: 450px;
 	width: auto;
 	border-bottom-left-radius: 80px 80px;
 	border-bottom-right-radius: 80px 80px;
 	border-top-right-radius: 80px 80px;
 	box-shadow: 10px 10px #f25f4c;
 	transition: all .3s ease-out;
-	background-color: #eebbc3;
+	background: linear-gradient(white,#f1b9c1,#f7b3bd);
 }
 
 
@@ -505,6 +511,8 @@ p.tag {
 	border: white;
 }
 
+
+
 .skill-wrap {
 	margin-bottom: 20px;
 }
@@ -563,7 +571,7 @@ p.tag {
 	color: #fff;
 	font-weight: bold;
 	margin: 0;
-	gap: 10px;
+	gap: 20px;
 }
 
 .section-7 .details ul {
@@ -577,11 +585,10 @@ p.tag {
 	list-style: none;
 }
 
-.section-7 .details i {
-	padding: 10px;
+.section-7 .details img {
+	height: 50px;
+	width: auto;
 	border-radius: 50%;
-	color: #fff;
-	background-color: #f25f4c;
 }
 
 .section-7 .details i:hover {
@@ -609,7 +616,6 @@ p.tag {
 	position: relative;
 	border-radius: 15px;
 	transition: all .3s ease-in-out;
-	background-color: grey;
 }
 
 .project-detail {
@@ -619,7 +625,7 @@ p.tag {
 	left: 0;
 	right: 0;
 	background-color: #f25f4ce5;
-	margin: 0px 18px;
+	margin: 0px 20px;
 	border-radius: 15px;
 	opacity: 0;
 	transition: all .2s ease-in-out;
@@ -627,12 +633,11 @@ p.tag {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	gap: 0px;
 }
 
 .project-detail h1 {
 	margin: 10px auto;
-	font-weight: 600;
+	font-weight: bold;
 	color: #fff;
 }
 
@@ -646,6 +651,7 @@ p.tag {
 	display: flex;
 	justify-content: center;
 	font-size: 40px;
+	gap: 10px;
 }
 
 .btn-links a {
@@ -682,8 +688,14 @@ p.tag {
 	}
 
 	.social{
+		margin-top: 10px;
+		gap: 8px;
 
-		gap: 5px;
+	}
+
+	.social img{
+		height: 35px;
+
 	}
 	
 	.social i{
