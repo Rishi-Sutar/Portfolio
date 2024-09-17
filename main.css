@@ -200,10 +200,10 @@ header {
 }
 
 .resume:hover {
-	padding-right:20px;
+	padding-right: 20px;
 }
 
-.resume a:hover{
+.resume a:hover {
 	color: #f2f3f5;
 }
 
@@ -304,24 +304,24 @@ header {
 	color: #f25f4c;
 }
 
-.social{
+.social {
 	display: flex;
 	gap: 20px;
-	padding:0px 0px 20px 20px;
+	padding: 0px 0px 20px 20px;
 }
 
-.social img{
+.social img {
 	height: 50px;
 	width: auto;
 	border-radius: 10px;
 	border: 4px solid white;
 }
 
-.social img:hover{
-    border: 4px solid #f25f4c;
+.social img:hover {
+	border: 4px solid #f25f4c;
 }
 
-.social a{
+.social a {
 	color: #eebbc3;
 	text-decoration: none;
 	display: flex;
@@ -329,7 +329,7 @@ header {
 	gap: 10px;
 }
 
-.social a:hover{
+.social a:hover {
 	color: #f2f3f5;
 }
 
@@ -384,7 +384,7 @@ p.tag {
 	border-top-right-radius: 80px 80px;
 	box-shadow: 10px 10px #f25f4c;
 	transition: all .3s ease-out;
-	background: linear-gradient(white,#f1b9c1,#f7b3bd);
+	background: linear-gradient(white, #f1b9c1, #f7b3bd);
 }
 
 
@@ -442,9 +442,7 @@ p.tag {
 
 }
 
-.timeline > .card:hover{
-	
-}
+.timeline>.card:hover {}
 
 .card-title {
 	font-weight: bold;
@@ -667,42 +665,42 @@ p.tag {
 }
 
 @media only screen and (max-width: 1100px) {
-	
+
 	.resume {
 		font-size: 20px;
 	}
 
-	.name h1{
+	.name h1 {
 		font-size: 40px;
 		padding-left: 10px;
 	}
-	
-	.name .typing{
+
+	.name .typing {
 		margin: 0;
-		padding-left:10px;
+		padding-left: 10px;
 	}
 
-	.photo{
+	.photo {
 		height: 400px;
 		width: auto;
 	}
 
-	.social{
+	.social {
 		margin-top: 10px;
 		gap: 8px;
 
 	}
 
-	.social img{
+	.social img {
 		height: 35px;
 
 	}
-	
-	.social i{
+
+	.social i {
 		font-size: 25px;
 	}
-	
-	.social a{
+
+	.social a {
 		gap: 5px;
 	}
 
@@ -762,4 +760,18 @@ p.tag {
 		right: 25px;
 		font-size: 30px;
 	}
+}
+
+
+.certifications-section {
+	padding: 60px 0;
+	background:#0c0532;
+}
+
+.certification-card {
+	transition: transform 0.3s ease-in-out;
+}
+
+.certification-card:hover {
+	transform: scale(1.05);
 }
